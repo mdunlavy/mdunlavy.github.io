@@ -4,72 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maisy Dunlavy</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 48px 24px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1 {
-      margin-bottom: 0.2em;
-    }
-    h2 {
-      margin-top: 2em;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.3em;
-    }
-    a {
-      color: #0b4f8a;
-    }
-    .subtitle {
-      font-size: 1.1em;
-      color: #555;
-    }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 18px;
-      margin: 16px 0;
-      background: #fafafa;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Maisy Dunlavy</h1>
-  <p class="subtitle">PhD Student in Computer Science, University of Illinois Chicago</p>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="name" href="index.html">Maisy Dunlavy</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="background.html">Background</a>
+      </div>
+    </nav>
+  </header>
 
-  <p>
-    I work on high-performance computing, GPU reliability, resilience evaluation,
-    and heterogeneous scientific computing workflows.
-  </p>
+  <main>
+    <section class="hero">
+      <img class="headshot" src="assets/headshot.jpg" alt="Headshot of Maisy Dunlavy" />
 
-  <h2>Research</h2>
-  <div class="card">
-    <strong>Cross-Architecture GPU Fault Injection at the LLVM IR Level</strong>
-    <p>
-      Poster materials and follow-up information for my work on comparing GPU
-      fault behavior across NVIDIA, AMD, and Intel platforms.
-    </p>
-    <p>
-      <a href="#">Poster PDF</a> |
-      <a href="#">Code/Artifact</a> |
-      <a href="#">Paper</a>
-    </p>
-  </div>
+      <div>
+        <h1>Maisy Dunlavy</h1>
+        <p class="subtitle">
+          PhD student in Computer Science at the University of Illinois Chicago, working on
+          high-performance computing, GPU reliability, and resilience evaluation for scientific workflows.
+        </p>
 
-  <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a><br />
-    GitHub: <a href="https://github.com/YOUR_USERNAME">github.com/YOUR_USERNAME</a><br />
-    LinkedIn: <a href="YOUR_LINKEDIN_URL">LinkedIn</a>
-  </p>
+        <div class="contact-row">
+          <a class="button primary" href="mailto:YOUR_EMAIL_HERE">Email</a>
+          <a class="button" href="YOUR_LINKEDIN_URL">LinkedIn</a>
+          <a class="button" href="https://github.com/mdunlavy">GitHub</a>
+          <a class="button" href="publications.html">Publications</a>
+        </div>
+      </div>
+    </section>
 
-  <h2>Funding</h2>
-  <p>
-    This work is supported by the C2 the P2 Fellowship.
-  </p>
+    <section>
+      <h2>About</h2>
+      <p>
+        I am interested in large-scale computing systems, heterogeneous GPU platforms,
+        and reproducible methods for evaluating reliability and resilience in scientific applications.
+        My current work focuses on understanding how fault behavior changes across GPU architectures
+        and software stacks.
+      </p>
+    </section>
+
+    <section>
+      <h2>Advisors and Research Groups</h2>
+      <div class="card-grid">
+        <div class="card">
+          <span class="tag">UIC</span>
+          <h3>EVL and SPEAR</h3>
+          <p>
+            I am part of the high-performance computing research community at UIC through
+            the Electronic Visualization Laboratory and the SPEAR group.
+          </p>
+          <p>
+            <a href="https://www.evl.uic.edu/">EVL</a> ·
+            <a href="https://spear.lab.uic.edu/">SPEAR</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Advising</span>
+          <h3>Faculty Mentorship</h3>
+          <p>
+            My advising and research mentorship includes Professor Zhiling Lan and
+            Dr. Michael Papka.
+          </p>
+          <p>
+            <a href="https://cs.uic.edu/profiles/lan-zhiling/">Zhiling Lan</a> ·
+            <a href="https://www.anl.gov/profile/michael-e-papka">Michael Papka</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Funding</h2>
+      <div class="card">
+        <p>
+          My work is supported by the C2 the P2 Fellowship.
+        </p>
+        <p>
+          <a href="FUNDING_LINK_HERE">C2 the P2 Fellowship</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © Maisy Dunlavy
+  </footer>
 </body>
 </html>
