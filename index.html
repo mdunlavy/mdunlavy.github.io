@@ -11,7 +11,7 @@
     <nav class="nav">
       <a class="name" href="index.html">Maisy Dunlavy</a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="background.html">Background</a>
@@ -21,9 +21,8 @@
 
   <main>
     <section class="hero">
-      <img class="headshot" src="assets/headshot.jpg" alt="Headshot of Maisy Dunlavy" />
-
-      <div>
+      <div class="hero-content">
+        <p class="eyebrow">Computer Science PhD Student</p>
         <h1>Maisy Dunlavy</h1>
         <p class="subtitle">
           PhD student in Computer Science at the University of Illinois Chicago, working on
@@ -31,26 +30,44 @@
         </p>
 
         <div class="contact-row">
-          <a class="button primary" href="mailto:YOUR_EMAIL_HERE">Email</a>
-          <a class="button" href="YOUR_LINKEDIN_URL">LinkedIn</a>
+          <a class="button primary" href="research.html">Research</a>
           <a class="button" href="https://github.com/mdunlavy">GitHub</a>
           <a class="button" href="publications.html">Publications</a>
         </div>
       </div>
+
+      <div class="portrait-card">
+        <div class="identity-panel" aria-label="Maisy Dunlavy profile card">
+          <span>MD</span>
+          <p>GPU reliability · HPC systems · scientific workflows</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="split">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Building reproducible insight into resilient GPU systems.</h2>
+        <p class="lead">
+          I am interested in large-scale computing systems, heterogeneous GPU platforms,
+          and reproducible methods for evaluating reliability and resilience in scientific applications.
+        </p>
+        <p>
+          My current work focuses on understanding how fault behavior changes across GPU architectures
+          and software stacks, especially for scientific workflows where correctness and performance
+          both matter.
+        </p>
+      </div>
+      <div class="feature-image" role="img" aria-label="GPU reliability visualization"></div>
     </section>
 
     <section>
-      <h2>About</h2>
-      <p>
-        I am interested in large-scale computing systems, heterogeneous GPU platforms,
-        and reproducible methods for evaluating reliability and resilience in scientific applications.
-        My current work focuses on understanding how fault behavior changes across GPU architectures
-        and software stacks.
-      </p>
-    </section>
-
-    <section>
-      <h2>Advisors and Research Groups</h2>
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">Community</p>
+          <h2>Advisors and Research Groups</h2>
+        </div>
+      </div>
       <div class="card-grid">
         <div class="card">
           <span class="tag">UIC</span>
@@ -81,13 +98,11 @@
     </section>
 
     <section>
+      <p class="eyebrow">Support</p>
       <h2>Funding</h2>
       <div class="card">
         <p>
           My work is supported by the C2 the P2 Fellowship.
-        </p>
-        <p>
-          <a href="FUNDING_LINK_HERE">C2 the P2 Fellowship</a>
         </p>
       </div>
     </section>
