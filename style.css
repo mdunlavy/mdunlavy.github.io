@@ -252,27 +252,13 @@ p + p {
   margin: 38px auto 0;
 }
 
-.headshot-placeholder {
+.headshot-photo {
   width: 170px;
   aspect-ratio: 4 / 5;
-  display: grid;
-  place-items: center;
   border: 2px solid var(--line);
   border-radius: 16px;
-  background: linear-gradient(180deg, rgba(217, 237, 247, 0.42), rgba(251, 251, 248, 0.86));
-  color: var(--accent);
-}
-
-.headshot-placeholder span {
-  width: 76px;
-  height: 76px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: rgba(226, 132, 115, 0.14);
-  font-size: 1.7rem;
-  font-weight: 700;
+  object-fit: cover;
+  object-position: 54% 32%;
 }
 
 .simple-section {
@@ -621,7 +607,7 @@ p + p {
     margin-left: 0;
   }
 
-  .headshot-placeholder {
+  .headshot-photo {
     width: min(170px, 100%);
   }
 
