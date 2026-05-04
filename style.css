@@ -182,10 +182,15 @@ p + p {
 
 .home-intro h1 {
   max-width: none;
-  font-size: clamp(3.4rem, 9vw, 7rem);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  white-space: nowrap;
 }
 
-.email-link {
+.contact-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
   margin-top: 16px;
   color: var(--muted);
   font-size: clamp(1.14rem, 2vw, 1.35rem);
@@ -198,29 +203,10 @@ p + p {
   font-size: clamp(1.12rem, 2vw, 1.28rem);
 }
 
-.home-image {
-  min-height: clamp(280px, 42vw, 500px);
-  margin-top: 56px;
-  border: 2px solid var(--line);
-  border-radius: 18px;
-  background:
-    linear-gradient(180deg, rgba(251, 248, 244, 0.06), rgba(55, 52, 49, 0.12)),
-    url("assets/hpc-hero.png") center / cover;
-  box-shadow: var(--shadow);
-  filter: sepia(0.12) saturate(0.82) contrast(0.98);
-}
-
 .simple-section {
   max-width: 920px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.text-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 1.2rem;
 }
 
 .hero::after {
@@ -374,6 +360,7 @@ p + p {
 .timeline {
   display: grid;
   gap: 18px;
+  align-items: stretch;
 }
 
 .card-grid {
@@ -392,6 +379,11 @@ p + p {
   border-radius: 16px;
   background: rgba(251, 248, 244, 0.86);
   box-shadow: none;
+}
+
+.card,
+.research-card {
+  height: 100%;
 }
 
 .card,
@@ -531,6 +523,14 @@ p + p {
   .home-intro {
     margin-top: 18px;
     text-align: left;
+  }
+
+  .home-intro h1 {
+    white-space: normal;
+  }
+
+  .contact-line {
+    justify-content: flex-start;
   }
 
   .bio {
