@@ -425,6 +425,10 @@ p + p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.three-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .research-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -575,6 +579,7 @@ p + p {
   .hero,
   .split,
   .card-grid,
+  .three-card-grid,
   .research-grid {
     grid-template-columns: 1fr;
   }
