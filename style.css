@@ -58,20 +58,10 @@ a:hover {
 .nav {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
-  min-height: 84px;
+  min-height: 72px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-}
-
-.name {
-  color: var(--ink);
-  font-size: 1.22rem;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-decoration: none;
-  white-space: nowrap;
+  justify-content: center;
 }
 
 .nav-links {
@@ -127,12 +117,12 @@ h3 {
 
 h1 {
   max-width: 760px;
-  font-size: clamp(2.9rem, 6.4vw, 5.8rem);
+  font-size: clamp(2.35rem, 5vw, 4rem);
 }
 
 h2 {
   margin-bottom: 22px;
-  font-size: clamp(1.75rem, 3vw, 2.55rem);
+  font-size: clamp(1.55rem, 2.4vw, 2rem);
 }
 
 h3 {
@@ -182,6 +172,55 @@ p + p {
     rgba(251, 248, 244, 0.78);
   background-size: 52px 52px;
   box-shadow: var(--shadow);
+}
+
+.home-intro {
+  max-width: 780px;
+  margin: 34px auto 0;
+  text-align: center;
+}
+
+.home-intro h1 {
+  max-width: none;
+  font-size: clamp(3.4rem, 9vw, 7rem);
+}
+
+.email-link {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: clamp(1.14rem, 2vw, 1.35rem);
+}
+
+.bio {
+  max-width: 760px;
+  margin: 34px auto 0;
+  color: var(--muted);
+  font-size: clamp(1.12rem, 2vw, 1.28rem);
+}
+
+.home-image {
+  min-height: clamp(280px, 42vw, 500px);
+  margin-top: 56px;
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(251, 248, 244, 0.06), rgba(55, 52, 49, 0.12)),
+    url("assets/hpc-hero.png") center / cover;
+  box-shadow: var(--shadow);
+  filter: sepia(0.12) saturate(0.82) contrast(0.98);
+}
+
+.simple-section {
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 1.2rem;
 }
 
 .hero::after {
@@ -462,13 +501,11 @@ p + p {
   .nav {
     min-height: auto;
     padding: 18px 0;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
+    align-items: center;
   }
 
   .nav-links {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   main {
@@ -489,6 +526,15 @@ p + p {
   .hero {
     min-height: auto;
     padding: 34px 24px;
+  }
+
+  .home-intro {
+    margin-top: 18px;
+    text-align: left;
+  }
+
+  .bio {
+    margin-left: 0;
   }
 
   .hero::after {
